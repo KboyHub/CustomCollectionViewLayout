@@ -13,6 +13,11 @@
 		B2C7BDC41EADF46E005A703B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C7BDC21EADF46E005A703B /* Main.storyboard */; };
 		B2C7BDC61EADF46E005A703B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2C7BDC51EADF46E005A703B /* Assets.xcassets */; };
 		B2C7BDC91EADF46E005A703B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C7BDC71EADF46E005A703B /* LaunchScreen.storyboard */; };
+		B2C7BDD21EADF487005A703B /* CustomCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7BDD11EADF487005A703B /* CustomCollectionViewLayout.m */; };
+		B2C7BDD61EADF599005A703B /* ColumnCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7BDD41EADF599005A703B /* ColumnCollectionViewCell.m */; };
+		B2C7BDD71EADF599005A703B /* ColumnCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C7BDD51EADF599005A703B /* ColumnCollectionViewCell.xib */; };
+		B2C7BDDB1EADF5AF005A703B /* RowCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C7BDD91EADF5AF005A703B /* RowCollectionViewCell.m */; };
+		B2C7BDDC1EADF5AF005A703B /* RowCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C7BDDA1EADF5AF005A703B /* RowCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,14 @@
 		B2C7BDC51EADF46E005A703B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2C7BDC81EADF46E005A703B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2C7BDCA1EADF46E005A703B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2C7BDD01EADF487005A703B /* CustomCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCollectionViewLayout.h; sourceTree = "<group>"; };
+		B2C7BDD11EADF487005A703B /* CustomCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionViewLayout.m; sourceTree = "<group>"; };
+		B2C7BDD31EADF599005A703B /* ColumnCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColumnCollectionViewCell.h; sourceTree = "<group>"; };
+		B2C7BDD41EADF599005A703B /* ColumnCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColumnCollectionViewCell.m; sourceTree = "<group>"; };
+		B2C7BDD51EADF599005A703B /* ColumnCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColumnCollectionViewCell.xib; sourceTree = "<group>"; };
+		B2C7BDD81EADF5AF005A703B /* RowCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowCollectionViewCell.h; sourceTree = "<group>"; };
+		B2C7BDD91EADF5AF005A703B /* RowCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowCollectionViewCell.m; sourceTree = "<group>"; };
+		B2C7BDDA1EADF5AF005A703B /* RowCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RowCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,8 @@
 		B2C7BDB81EADF46E005A703B /* CustomCollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
+				B2C7BDDD1EAE0B6C005A703B /* CustomLayout */,
+				B2C7BDDE1EAE0B84005A703B /* CustomCell */,
 				B2C7BDBC1EADF46E005A703B /* AppDelegate.h */,
 				B2C7BDBD1EADF46E005A703B /* AppDelegate.m */,
 				B2C7BDBF1EADF46E005A703B /* ViewController.h */,
@@ -77,6 +92,28 @@
 				B2C7BDBA1EADF46E005A703B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B2C7BDDD1EAE0B6C005A703B /* CustomLayout */ = {
+			isa = PBXGroup;
+			children = (
+				B2C7BDD01EADF487005A703B /* CustomCollectionViewLayout.h */,
+				B2C7BDD11EADF487005A703B /* CustomCollectionViewLayout.m */,
+			);
+			name = CustomLayout;
+			sourceTree = "<group>";
+		};
+		B2C7BDDE1EAE0B84005A703B /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				B2C7BDD31EADF599005A703B /* ColumnCollectionViewCell.h */,
+				B2C7BDD41EADF599005A703B /* ColumnCollectionViewCell.m */,
+				B2C7BDD51EADF599005A703B /* ColumnCollectionViewCell.xib */,
+				B2C7BDD81EADF5AF005A703B /* RowCollectionViewCell.h */,
+				B2C7BDD91EADF5AF005A703B /* RowCollectionViewCell.m */,
+				B2C7BDDA1EADF5AF005A703B /* RowCollectionViewCell.xib */,
+			);
+			name = CustomCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +175,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2C7BDDC1EADF5AF005A703B /* RowCollectionViewCell.xib in Resources */,
 				B2C7BDC91EADF46E005A703B /* LaunchScreen.storyboard in Resources */,
 				B2C7BDC61EADF46E005A703B /* Assets.xcassets in Resources */,
+				B2C7BDD71EADF599005A703B /* ColumnCollectionViewCell.xib in Resources */,
 				B2C7BDC41EADF46E005A703B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,8 +191,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2C7BDC11EADF46E005A703B /* ViewController.m in Sources */,
+				B2C7BDDB1EADF5AF005A703B /* RowCollectionViewCell.m in Sources */,
+				B2C7BDD61EADF599005A703B /* ColumnCollectionViewCell.m in Sources */,
 				B2C7BDBE1EADF46E005A703B /* AppDelegate.m in Sources */,
 				B2C7BDBB1EADF46E005A703B /* main.m in Sources */,
+				B2C7BDD21EADF487005A703B /* CustomCollectionViewLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
